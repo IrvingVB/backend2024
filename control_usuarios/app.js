@@ -2,6 +2,8 @@ const express = require("express");
 
 const app = express();
 
+app.use(express.json());
+
 const usuarios = [
   { id: 1,
     nombre: "Irving",
@@ -40,6 +42,16 @@ app.get("/usuarios/:id", (req, res) => {
   };
   
   res.status(200).send(usuario);
+
+});
+
+app.post("/usuarios",(req, res) => {
+  const {nombre, apellidos, email} = req.body;
+
+  usuarios.push({id: usuarios.length +1, nombre, apellidos, email});
+  
+  //console.log(req.body);
+  res.status(201).send("El usuario se agregó correctamente");
 
 });
 
