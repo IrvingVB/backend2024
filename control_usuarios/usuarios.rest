@@ -12,3 +12,13 @@ content-type: application/json
     "apellidos": "Vital",
     "email": "irvingenrique164@gmail.com"
 }
+
+###
+PUT http://localhost:3000/usuarios/2
+Content-Type: application/json
+
+{
+    "nombre": "Juan",
+    "apellidos": "Aguilar",
+    "email": "juanaguilar198@gmail.com"
+}
