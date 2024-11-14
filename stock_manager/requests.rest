@@ -10,9 +10,9 @@ POST http://localhost:3000/users/
 Content-Type: application/json
 
 {
-  "username": "batman",
+  "username": "irviogpppppppppppp",
   "password": "batmobile",
-  "email": "batman@batmobile.com"
+  "email": "batmanpppppppppppppppp@batmobile.com"
   //para agregar un usuario
 }
 
@@ -31,6 +31,16 @@ Content-Type: application/json
 DELETE http://localhost:3000/users/5 
 //para eliminar
 
+
+
+###
+POST http://localhost:3000/users/login
+Content-Type: application/json
+
+{
+  "username": "irviogpppppppppppp",
+  "password": "batmobile"
+}
 
 
 ### Mostrar todos los miembros de staff
