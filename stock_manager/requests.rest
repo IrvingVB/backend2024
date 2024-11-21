@@ -10,19 +10,21 @@ POST http://localhost:3000/users/
 Content-Type: application/json
 
 {
-  "username": "irviogpppppppppppp",
-  "password": "batmobile",
-  "email": "batmanpppppppppppppppp@batmobile.com"
+  "username": "IrvingE",
+  "password": "backends2024",
+  "email": "irvingenrique01gmail.com" 
   //para agregar un usuario
 }
 
 
 ###
-PUT http://localhost:3000/users/1
+PUT http://localhost:3000/users/2
 Content-Type: application/json
 
 {
-  "username": "Paola" 
+  "username": "Sergio",
+  "password": "Cervantes#123",
+  "email": "guatemala20003@gmail.com" 
   //para actualizar el usuario
 }
 
