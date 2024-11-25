@@ -1,0 +1,45 @@
+### Obtener todos los clientes
+GET http://localhost:3000/clients
+Content-Type: application/json
+
+###
+
+### Obtener un cliente por RFC
+GET http://localhost:3000/clients/A12345
+
+###
+
+### Agregar un nuevo cliente
+POST http://localhost:3000/clients
+Content-Type: application/json
+
+{
+  "rfc": "A32345",
+  "first_name": "Angel",
+  "last_name": "Vidal",
+  "birth_date": "2003-02-03",
+  "gender": "M",
+  "phone_number": "2878881817",
+  "email": "angelvidal@example.com",
+  "address": "Colonia Cervecera, Tuxtepec, México"
+}
+
+###
+
+### Actualizar un cliente existente
+PUT http://localhost:3000/clients/A12345
+Content-Type: application/json
+
+{
+  "first_name": "Juan",
+  "last_name": "Cervantes",
+  "birth_date": "2004-01-01",
+  "gender": "M",
+  "phone_number": "1234567890",
+  "email": "juan.cevantes@example.com",
+  "address": "1234 Street Name"
+}
+
+
+### Eliminar un cliente
+DELETE http://localhost:3000/clients/A32345
