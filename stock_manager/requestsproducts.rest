@@ -28,10 +28,10 @@ PUT http://localhost:3000/products/1
 Content-Type: application/json
 
 {
-  "product": "Updated Product",
-  "description": "Updated product description.",
+  "product": "Modelo Negra Importada 500ml",
+  "description": "Cerveza modelo negra importada italiana de 500 ml",
   "stock": 120,
-  "measurement_unit": "unit",
+  "measurement_unit": "piece",
   "price": 55.0,
   "discount": 15
 }

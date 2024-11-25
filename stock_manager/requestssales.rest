@@ -14,8 +14,8 @@ Content-Type: application/json
     "quantity": 50,
     "sale_date": "2024-11-23T11:00:00",
     "payment_method": "credit",
-    "ticket": "TICKET3",
-    "invoice": "INV2"
+    "ticket": "TICKET4",
+    "invoice": "INV3"
 }
 
 
@@ -23,12 +23,12 @@ Content-Type: application/json
 //como equipo pusimos el PUT y el codigo del endponit de actualizar la compra
 //aunque regularmente al finalizar la compra no se puede editar, solamente borrar
 //al momento de borra nuestro codigo regresa la cantidad de producto comprado.
-PUT http://localhost:3000/sales/11
+PUT http://localhost:3000/sales/1
 Content-Type: application/json
 
 {
-    "client_rfc": "A12",
-    "product_id": 7,
+    "client_rfc": "A12345",
+    "product_id": 1,
     "quantity": 50,
     "sale_date": "2024-11-23T11:00:00",
     "payment_method": "credit",
@@ -37,4 +37,4 @@ Content-Type: application/json
 }
 
 ### Eliminar una venta (DELETE)
-DELETE http://localhost:3000/sales/13
+DELETE http://localhost:3000/sales/2
