@@ -14,3 +14,15 @@ Content-Type: application/json
     "password": "vidal2003#"
 }
 
+###
+PUT http://localhost:3000/users/3 
+Content-Type: application/json
+
+{
+    "first_name": "Bryan",
+    "last_name": "Morales Contreras",
+    "email": "bryan@gmail.com"
+}
+
+###
+DELETE http://localhost:3000/users/2
