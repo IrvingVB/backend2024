@@ -1,1 +1,25 @@
 GET http://localhost:3000/pokemons 
+
+### //Obtener por ID Pokemon
+GET http://localhost:3000/pokemons/25
+
+### //Crear Pokemon
+POST http://localhost:3000/pokemons 
+Content-Type: application/json
+
+{
+"name": "IrvingPLus", 
+"image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/6.svg"
+}
+
+### //Editar Pokemon
+PUT http://localhost:3000/pokemons/1 
+Content-Type: application/json
+
+{
+"name": "Ultra-bulbasaur", 
+"image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/6-mega.svg"
+}
+
+### //Eliminar Pokemon 
+DELETE http://localhost:3000/pokemons/152
