@@ -1,17 +1,23 @@
-GET http://localhost:3000/users
+GET http://localhost:3000/users 
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwiaWF0IjoxNzM0MDIzNDA2LCJleHAiOjE3MzQwMjM3MDZ9.PH0VXZxzT6vcAwOdidhJf-T9prwvFM3OURW5zKEa8y0
 
 ###
-GET http://localhost:3000/users/2
+GET http://localhost:3000/users/5
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwiaWF0IjoxNzM0MDIzNDA2LCJleHAiOjE3MzQwMjM3MDZ9.PH0VXZxzT6vcAwOdidhJf-T9prwvFM3OURW5zKEa8y0
 
 ###
 POST http://localhost:3000/users
+//Content-Type: application/json
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwiaXNfYWRtaW4iOjEsImlhdCI6MTczNDAyMzg3OCwiZXhwIjoxNzM0MDI0MTc4fQ.Og3EifzIg6QfGA2HnWnWeUIyBdpMcjfItvNJ1yc7TLY
 
 {
-    "first_name": "Angel David",
-    "last_name": "Cabrera Vidal",
-    "email": "vidlein007@gmail.com",
-    "password": "vidal2003#"
+    "first_name": "Calabazin",
+    "last_name": "De Jesus Chayote",
+    "email": "verdura2000@gmail.com",
+    "password": "osw2003#"
 }
 
 ###
